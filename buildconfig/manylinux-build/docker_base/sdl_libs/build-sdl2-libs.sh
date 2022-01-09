@@ -3,14 +3,14 @@ set -e -x
 
 cd $(dirname `readlink -f "$0"`)
 
-SDL2="SDL2-2.0.18"
+SDL2="SDL2-2.0.20"
 IMG2="SDL2_image-2.0.5"
 TTF2="SDL2_ttf-2.0.15"
 MIX2="SDL2_mixer-2.0.4"
 
 
 # Download
-curl -sL https://www.libsdl.org/release/${SDL2}.tar.gz > ${SDL2}.tar.gz
+curl -sL https://www.libsdl.org/tmp/release/${SDL2}.tar.gz > ${SDL2}.tar.gz
 # curl -sL https://www.libsdl.org/tmp/release/SDL2-2.0.14.tar.gz > SDL2-2.0.14.tar.gz
 # curl -sL https://hg.libsdl.org/SDL/archive/tip.tar.gz > ${SDL2}.tar.gz
 
